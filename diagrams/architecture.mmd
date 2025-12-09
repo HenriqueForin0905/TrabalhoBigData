@@ -1,0 +1,8 @@
+graph LR
+  subgraph DataLake
+    S[Source CSVs] --> R[Raw]
+    R --> B[Bronze]
+    B --> Si[Silver]
+    Si --> G[Gold]
+  end
+  G --> BI[BI / Dashboard]
